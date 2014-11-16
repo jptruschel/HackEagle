@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hue.hackeagle" >
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RequestInfo"
+            android:label="@string/title_activity_request_info" >
+        </activity>
+        <activity
+            android:name=".DeveloperActivity"
+            android:label="@string/title_activity_developer" >
+        </activity>
+        <activity
+            android:name=".DesignerActivity"
+            android:label="@string/title_activity_designer" >
+        </activity>
+        <activity
+            android:name=".NewRequest"
+            android:label="@string/title_activity_new_request" >
+        </activity>
+
+        <activity android:name="com.braintreepayments.api.dropin.BraintreePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+
+    </application>
+
+</manifest>

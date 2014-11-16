@@ -1,0 +1,10 @@
+Merchant ID: kmtv7n6scxsv8q6f
+Public: 2hfwz3dcqvn5kk85
+Private: a6ba6e0ae1498dc046418b95fc697c0e
+
+BraintreeGateway gateway = new BraintreeGateway(
+  Environment.SANDBOX,
+  "kmtv7n6scxsv8q6f",
+  "2hfwz3dcqvn5kk85",
+  "a6ba6e0ae1498dc046418b95fc697c0e"
+);

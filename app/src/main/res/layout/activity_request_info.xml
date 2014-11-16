@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hue.hackeagle.RequestInfo">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rinfo_et_desc"
+        android:editable="false"
+        android:maxLines="12"
+        android:minLines="12"
+        android:inputType="textMultiLine"
+        android:background="@color/bt_very_light_gray"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:layout_below="@+id/idev_tv_staticdev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rinfo_tv_price"
+        android:layout_alignEnd="@+id/rinfo_tv_price"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price"
+        android:id="@+id/rinfo_tv_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginStart="16dp"
+        android:text="Category"
+        android:id="@+id/rinfo_tv_category"
+        android:layout_toEndOf="@+id/rinfo_img_ctgry"
+        android:layout_above="@+id/idev_tv_staticdev"
+        android:layout_toRightOf="@+id/rinfo_img_ctgry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Detailed Descrption: "
+        android:layout_marginTop="8dp"
+        android:id="@+id/idev_tv_staticdev"
+        android:layout_below="@+id/rinfo_img_ctgry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Requested by: "
+        android:layout_marginTop="6dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/rinfo_et_desc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="name@domain.com"
+        android:id="@+id/rinfo_tv_req"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action"
+        android:id="@+id/rinfo_btn_action"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/rinfo_et_desc"
+        android:layout_alignEnd="@+id/rinfo_et_desc" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rinfo_img_ctgry"
+        android:src="@drawable/req_o"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Accepted by: "
+        android:id="@+id/textView2"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/rinfo_tv_req"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="name@domain.com"
+        android:id="@+id/rinfo_tv_accby"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/rinfo_tv_req"
+        android:layout_alignStart="@+id/rinfo_tv_req" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm / Pay"
+        android:id="@+id/rinfo_confirm"
+        android:onClick="OnConfirmPayment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

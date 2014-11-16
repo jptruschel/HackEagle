@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/req_li_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/req_o" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:gravity="top"
+        android:id="@+id/req_li_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/req_li_icon"
+        android:layout_toEndOf="@+id/req_li_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/req_li_tag"
+        android:gravity="bottom"
+        android:layout_toEndOf="@+id/req_li_icon"
+        android:layout_toRightOf="@+id/req_li_icon"
+        android:layout_below="@+id/req_li_name"
+        android:layout_alignLeft="@+id/req_li_name"
+        android:layout_alignStart="@+id/req_li_name" />
+
+
+</RelativeLayout>
